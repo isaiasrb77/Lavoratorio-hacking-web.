@@ -1,1 +1,12 @@
+@echo off
+echo Generando reporte...
 
+:: Ejecutar comandos y guardar/añadir al archivo
+ipconfig > resultado.txt
+ipconfig /all >> resultado.txt
+ipconfig /release >> resultado.txt
+ipconfig /renew >> resultado.txt
+ipconfig /flushdns >> resultado.txt
+
+echo Proceso terminado. Revisa el archivo resultado.txt
+pause
